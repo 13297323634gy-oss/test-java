@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - '**'  # 所有分支都会触发扫描
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
